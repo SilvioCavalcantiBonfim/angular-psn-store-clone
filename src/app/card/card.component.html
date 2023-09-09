@@ -1,0 +1,22 @@
+<aside 
+  class="w-full relative cursor-pointer bg-cover transition-all rounded-md min-h-[129px] min-w-[371px] flex justify-center items-center innerShadow" 
+  [ngStyle]="{
+    backgroundImage: 'url('+game.src+')'
+  }"
+>
+  <h1 class="text-base text-white font-extrabold" style="text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.35);">{{game.title}}</h1>
+  <div class="absolute top-0 left-0 flex gap-1 p-1">
+    <span class="uppercase font-extrabold bg-white px-1 text-[9px] border border-black" *ngFor="let p of game.plataform">
+      {{p}}
+    </span>
+  </div>
+  <div class="flex absolute bottom-0 right-0 items-center gap-3">
+    <span class="text-white font-semibold text-xs" *ngIf="isFree(); else free">{{game.value | currency}}</span>
+    <ng-template #free>
+      <span class="text-white font-semibold text-sm">Free</span>
+    </ng-template>
+    <button class="bg-[#0072CE] rounded-br-md rounded-tl-md" style="filter: drop-shadow(0px 0px 15px #0072CE);">
+      <span class="text-white text-xs py-1 px-3">Add To Cart</span>
+    </button>
+  </div>
+</aside>

@@ -1,4 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.innerShadow{
+  box-shadow: 0px -40px 55px 15px #29262E inset;
+}
+.innerShadow:hover{
+  box-shadow: none;
+}

@@ -7,6 +7,22 @@ module.exports = {
         sans: ["Open Sans", "sans"],
       },
       keyframes: {
+        slideoutleft: {
+          '0%': {
+            transform: 'translateX(-100px)',
+          },
+          '100%': {
+            transform: 'translateX(0)',
+          },
+        },
+        slideoutright: {
+          '0%': {
+            transform: 'translateX(100px)',
+          },
+          '100%': {
+            transform: 'translateX(0)',
+          },
+        },
         heartbeat: {
           from: {
             transform: "scale(1)",
@@ -55,6 +71,8 @@ module.exports = {
       animation: {
         heartbeat: "heartbeat 1.5s infinite",
         wobblehorbottom: "wobblehorbottom 0.8s infinite",
+        slideoutleft: 'slideoutleft 10s ease-in-out',
+        slideoutright: 'slideoutright 10s ease-in-out',
       },
     },
   },
