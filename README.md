@@ -1,4 +1,4 @@
-# README - Clone da PSN em Angular
+# Clone da PSN em Angular
 
 ![angular](https://img.shields.io/badge/-Angular-white?style=for-the-badge&logo=angular&color=DD0031&logoColor=white)
 ![tailwindcss](https://img.shields.io/badge/-tailwindcss-white?style=for-the-badge&logo=tailwindcss&color=06B6D4&logoColor=white)
